@@ -9,7 +9,7 @@ from flask import Flask, request, jsonify  # For creating the Flask API
 superkart_api = Flask("SuperKart’s decision-making systems") #Complete the code to define the name of the app
 
 # Load the trained churn prediction model
-model = joblib.load("backend_files/xgb_tuned.joblib") #Complete the code to define the location of the serialized model
+model = joblib.load("xgb_tuned.joblib") #Complete the code to define the location of the serialized model
 
 # Define a route for the home page
 @superkart_api.get('/')
